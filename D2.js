@@ -25,7 +25,7 @@ console.log("ES2 - ", "il numero " + esercizio2 + " non è uguale a 5" );}
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-let esercizio3 = parseInt(prompt("Inserisci un numero intero per l'Esercizio 3:"));
+let esercizio3 = 5;
 if (esercizio3 % 5 === 0){
   console.log("ES3 - ", esercizio3 + " è divisibile per 5");
 } else console.log("ES3 - ", esercizio3 + " non è divisibile per 5");
@@ -35,8 +35,8 @@ if (esercizio3 % 5 === 0){
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-let esercizio4 = parseInt(prompt("Inserisci il primo numero intero per l'Esercizio 4:"));
-let esercizio4_2 = parseInt(prompt("Inserisci il secondo numero intero per l'Esercizio 4:"));
+let esercizio4 = 4;
+let esercizio4_2 = 4;
 
 if (esercizio4 === 8){
     console.log("ES4 - ", esercizio4 + "è uguale a 8");
@@ -67,7 +67,7 @@ let spedizione = 10;
 let prodotto;
 
 
-prodotto = parseInt(prompt("Inserisci il valore del prodotto che stai acquistando: "));
+prodotto = 100;
 let totalShoppingCart = prodotto + spedizione;
 
 if (prodotto >= 50) {
@@ -89,8 +89,10 @@ if (blackFridayState) {
   if (prodotto >= 50) {
   prodotto = prodotto - blackFridayTotal;
   spedizione = 0; 
+  totalShoppingCart = prodotto + spedizione;
   console.log("ES6 - ", "Hai diritto allo sconto e non pagherai la spedizione. Totale Carrello: " + totalShoppingCart);
 } else {prodotto = prodotto - blackFridayTotal;
+  totalShoppingCart = prodotto + spedizione;
   console.log("ES6 - ", "Non hai diritto allo sconto spedizione. Totale Carrello: " + totalShoppingCart);}
 } else console.log("ES6 - OGGI NON E' IL BLACK FRIDAY");
 
@@ -187,7 +189,7 @@ Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rim
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 delete me.lastName;
-console.log(me);
+console.log("ES12 - ", me);
 
 
 /* ESERCIZIO 13
@@ -201,9 +203,17 @@ Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rim
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+let array = [];
+for (let i=1; i<=10; i++)
+{
+array.push(i) 
+}
+console.log("ES14 - ", array);
 
 /* ESERCIZIO 15
-  Scrivi del codice per sostituire l'ultimo elemento dell'array, ovvero il valore 10, con il valore 100.
+Scrivi del codice per sostituire l'ultimo elemento dell'array, ovvero il valore 10, con il valore 100.
 */
+array[array.length - 1] = 100;
+console.log("ES15 - ", array);
 
 /* SCRIVI QUI LA TUA RISPOSTA */
