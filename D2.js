@@ -219,7 +219,8 @@ Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rim
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-
+me.skills.pop();
+console.log("ES13 - ", me);
 /* ESERCIZIO 14
   Scrivi del codice per creare un array inizialmente vuoto. Riempilo successivamente con i numeri da 1 a 10.
 */
