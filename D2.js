@@ -113,10 +113,32 @@ let numeri = [numero1, numero2, numero3];
 numeri.sort(function(a, b) {
   return b - a;
 });
-console.log("ES7 - Numeri ordinati dal più alto al più basso:", numeri);
+console.log("ES7.1 - Numeri ordinati con ARRAY:", numeri);
 
 // Volendoli ordinare con IF
-
+// Trova il numero più alto
+if (numero1 >= numero2 && numero1 >= numero3) {
+  // numero1 è il più alto
+  if (numero2 >= numero3) {
+    console.log("ES7.2 - Numeri ordinati con IF:", numero1, numero2, numero3);
+  } else {
+    console.log("ES7.2 - Numeri ordinati con IF:", numero1, numero3, numero2);
+  }
+} else if (numero2 >= numero1 && numero2 >= numero3) {
+  // numero2 è il più alto
+  if (numero1 >= numero3) {
+    console.log("ES7.2 - Numeri ordinati con IF:", numero2, numero1, numero3);
+  } else {
+    console.log("ES7.2 - Numeri ordinati con IF:", numero2, numero3, numero1);
+  }
+} else {
+  // numero3 è il più alto
+  if (numero1 >= numero2) {
+    console.log("ES7.2 - Numeri ordinati con IF:", numero3, numero1, numero2);
+  } else {
+    console.log("ES7.2 - Numeri ordinati con IF:", numero3, numero2, numero1);
+  }
+}
 
 
 
